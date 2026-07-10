@@ -164,8 +164,8 @@
     <span class="tag tag-muted">auto-remediate</span>
   </div>
   <div class="meta">
-    <span>Last run: Tue, 07 Jul 2026 09:51:54 UTC</span>
-    <span>Est. next run: Fri, 10 Jul 2026 09:51:54 UTC</span>
+    <span>Last run: Fri, 10 Jul 2026 09:45:17 UTC</span>
+    <span>Est. next run: Mon, 13 Jul 2026 09:45:17 UTC</span>
   </div>
   <a class="run-btn" href="https://github.com/hartejgosal-17/SDO-hygiene-agent/actions/workflows/hygiene-check.yml" target="_blank" rel="noopener">
     &#9654; Run now (GitHub Actions)
@@ -236,7 +236,23 @@
       
       <div class="failures">
         <strong>What failed:</strong>
-        <ul><li>Auth failed: Command failed: sf org display --target-org sdo-amer --json</li></ul>
+        <ul><li>Auth failed: /opt/hostedtoolcache/node/20.20.2/x64/lib/node_modules/@salesforce/cli/node_modules/@jsforce/jsforce-node/node_modules/undici/lib/web/cache/cachestorage.js:20
+    webidl.util.markAsUncloneable(this)
+                ^
+
+TypeError: webidl.util.markAsUncloneable is not a function
+    at new CacheStorage (/opt/hostedtoolcache/node/20.20.2/x64/lib/node_modules/@salesforce/cli/node_modules/@jsforce/jsforce-node/node_modules/undici/lib/web/cache/cachestorage.js:20:17)
+    at Object.&lt;anonymous&gt; (/opt/hostedtoolcache/node/20.20.2/x64/lib/node_modules/@salesforce/cli/node_modules/@jsforce/jsforce-node/node_modules/undici/index.js:179:25)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.&lt;anonymous&gt; (/opt/hostedtoolcache/node/20.20.2/x64/lib/node_modules/@salesforce/cli/node_modules/@jsforce/jsforce-node/lib/request.js:8:18)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+
+Node.js v20.20.2</li></ul>
       </div>
       
     </div>
